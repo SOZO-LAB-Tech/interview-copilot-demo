@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Interview Copilot · Nestlé Vietnam</title>
+<meta name="description" content="Interview Copilot demo by SOZO LAB — live interview guidance, evidence capture and coverage tracking.">
+<link rel="icon" href="assets/sozolab-logo.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main id="app">
+<div id="srlive" class="sr-only" role="status" aria-live="polite"></div>
+ <section class="stage" id="stage">
+  <header class="top" id="top"></header>
+  <div class="board">
+   <div class="lcol">
+    <div class="vidcard" id="vidcard">
+     <div class="mainvid" id="mainvid"></div>
+     <div class="pips" id="pips"></div>
+     <div class="center" id="center"></div>
+     <nav class="ctrl" id="ctrl" aria-label="Call controls"></nav>
+    </div>
+    <section class="card glass cov" id="cov"></section>
+   </div>
+   <aside class="rcol">
+    <section class="card glass guide" id="guide" hidden></section>
+    <section class="card glass cop" id="cop"></section>
+    <section class="card glass ins" id="ins" hidden></section>
+    <section class="card glass feed" id="feed" hidden></section>
+    <aside class="drawer card glass" id="drawer" hidden aria-label="Transcript"></aside>
+   </aside>
+  </div>
+  <div class="ovl" id="ovl" hidden></div>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+ </section>
+ <section class="wrap" id="wrap" hidden></section>
+ <section class="lobby" id="lobby" hidden></section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
